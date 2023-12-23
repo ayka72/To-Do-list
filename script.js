@@ -1,4 +1,4 @@
-const inputBox = document.getElementById("input_box");
+const inputBox = document.getElementsByClassName("input-in");
 const listContainer = document.getElementsByClassName("list-group");
 
 function addTask(){
@@ -8,6 +8,7 @@ function addTask(){
     else{
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
-        listContainer.appengChild(li);
+        listContainer.appendChild(li);
     }
+    inputBox.value = ""
 }
