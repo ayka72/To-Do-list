@@ -1,5 +1,5 @@
-const inputBox = document.getElementsByClassName("input-in");
-const listContainer = document.getElementsByClassName("list-group");
+const inputBox = document.querySelector(".input-in");
+const listContainer = document.querySelector(".list-group");
 
 function addTask(){
     if(inputBox.value === ''){
@@ -10,5 +10,5 @@ function addTask(){
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
     }
-    inputBox.value = "";
+    // inputBox.value = '';
 }
