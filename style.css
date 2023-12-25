@@ -18,7 +18,8 @@ hr {
     border-radius: 3px;
 }
 
-#mon {
+#mon, #tue, #wed, #thu, #fri, #sat, #sun {
+    margin: 5px;
     background-color: #484848;
     float: left;
     border-radius: 10px;
@@ -35,7 +36,7 @@ input {
     border: none;
     border-radius: 10px;
     outline: none;
-
+    max-width: 114px;
     padding: 10px;
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -51,16 +52,16 @@ input {
 button:hover{
     cursor: pointer;
 }
-.list-group li{
+div ul li{
     font-family: 'Raleway', sans-serif;
     color: #0095be;
     list-style: none;
     position: relative;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px 10px;
     user-select: none;
     cursor: pointer;
 }
-.list-group li::before{
+div ul li::before{
     content: " ";
     position: absolute;
     height: 28px;
@@ -69,14 +70,10 @@ button:hover{
     background-image: url(ring.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
-    left: 8px;
+    top: 8px;
+    left: -30px;
 }
-ul li.done{
-    color: #8a8a8a;
-    text-decoration: line-through;
-}
-ul li.done::before{
-    background-image: url(done_ring.png);
-    
+
+body div{
+    max-width: 191px;
 }
